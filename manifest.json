@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Text to URL Converter",
+  "version": "1.0.0",
+  "description": "Convert a title into a URL-friendly slug by removing extra spaces and joining words with hyphens.",
+  "action": {
+    "default_title": "Text to URL Converter",
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}

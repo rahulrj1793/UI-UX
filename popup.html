@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to URL Converter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Text to URL Converter</h1>
+
+      <label for="titleInput">Title</label>
+      <input id="titleInput" type="text" placeholder="Enter your title" autocomplete="off" />
+
+      <label for="baseUrlInput">Base URL (optional)</label>
+      <input id="baseUrlInput" type="text" placeholder="https://example.com/blog" autocomplete="off" />
+
+      <button id="convertBtn" type="button">Convert</button>
+
+      <label for="slugOutput">Slug</label>
+      <div class="output-row">
+        <input id="slugOutput" type="text" readonly />
+        <button id="copySlugBtn" type="button" class="secondary">Copy</button>
+      </div>
+
+      <label for="urlOutput">Full URL</label>
+      <div class="output-row">
+        <input id="urlOutput" type="text" readonly />
+        <button id="copyUrlBtn" type="button" class="secondary">Copy</button>
+      </div>
+
+      <p id="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
